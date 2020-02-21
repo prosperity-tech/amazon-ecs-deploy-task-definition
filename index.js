@@ -195,7 +195,7 @@ async function run() {
 
     // Update the service with the new task definition
     if (service) {
-      const clusterName = cluster ? cluster : 'default';
+      const clusterName = cluster
 
       // Determine the deployment controller
       const describeResponse = await ecs.describeServices({
